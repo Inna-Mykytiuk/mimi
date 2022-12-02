@@ -112,9 +112,16 @@
    }
 }
 
-.deserts__name.last {
-   margin: 0;
-   
+.drinks__name {
+   margin: 0 0 8px 0;
+   @media screen and (min-width: 1024px) {
+   margin: 0 0 8px 0;
+   }
+}
+
+.deserts__name.last,
+.drinks__name.last {
+   margin: 0;   
 }
 
 

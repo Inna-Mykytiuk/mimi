@@ -336,7 +336,17 @@ body {
   }
 }
 
-.deserts__name.last {
+.drinks__name {
+  margin: 0 0 8px 0;
+}
+@media screen and (min-width: 1024px) {
+  .drinks__name {
+    margin: 0 0 8px 0;
+  }
+}
+
+.deserts__name.last,
+.drinks__name.last {
   margin: 0;
 }
 
@@ -384,11 +394,13 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  .list__wrap {
-    min-width: 411px;
+  .list__wrap.first {
+    width: 411px;
+  }
+  .list__wrap.second {
+    width: 430px;
   }
 }
-
 .benefits {
   background-color: #FFFDEE;
   padding: 32px 0;
