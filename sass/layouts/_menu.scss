@@ -1,0 +1,171 @@
+.menu {
+   background-color: #FFFDEE;
+   padding: 32px 0;
+}
+
+.menu__title {
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 1.15;
+
+
+   color: #000000;
+}
+
+.menu__subtitle {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.15;
+   margin: 16px 0;
+   
+   color: #000000;
+   @media screen and (min-width: 1024px) {
+   margin: 20px 0;
+   }
+}
+
+// .menu__subtitle.first {
+//    margin-bottom: 0 0 16px 0;
+//    @media screen and (min-width: 1024px) {
+//    margin-bottom: 0 0 20px 0;
+//    }
+// }
+
+
+.menu__item {
+   display: flex;
+   // flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+   // width: 100%;
+
+}
+
+.menu__name {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.21;
+   letter-spacing: 0.02em;
+   margin: 0 0 4px 0;
+
+   color: #000000;
+}
+
+.menu__text {
+   // min-width: 220px;
+   font-weight: 400;
+   font-size: 10px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   margin-bottom: 8px;
+
+   color: #000000;
+}
+
+.menu__text.last {
+   margin-bottom: 0;
+}
+.menu__text.short {
+   max-width: 210px;
+   margin: 0;
+}
+.menu__text.long {
+   width: 225px;
+   margin: 0 0 8px 0;
+}
+
+.menu__amount {
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 1.2;
+
+   letter-spacing: 0.02em;
+   color: #000000;
+   margin: 0;
+
+}
+
+.menu__price {
+   font-size: 14px;
+   line-height: 1.2;
+
+   letter-spacing: 0.02em;
+   color: #000000;
+   font-weight: 700;
+   // margin: 0;
+   margin: 0 0 0 32px;
+   @media screen and (min-width: 1024px) {
+   margin: 0 0 0 47px;
+   }
+}
+
+.name__wrap {
+   max-width: 221px;
+   margin-right: auto;
+   
+}
+
+.deserts__name{
+   margin: 0 0 8px 0;
+   
+}
+
+.deserts__name.last {
+   margin: 0;
+   
+}
+
+
+
+.btn-menu {
+   display: block;
+   margin: 0 auto;
+   margin-top: 32px;
+   padding: 15px 24px;
+
+   font-family: inherit;
+   height: 50px;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 1.33;
+   letter-spacing: 0.09em;
+   text-transform: uppercase;
+
+   min-width: 236px;
+   height: 50px;
+
+   background-color: #000000;
+
+   border-radius: 25px;
+   border: 2px solid #FFFDEE;
+   cursor: pointer;
+
+   color:  #F3C653;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover {
+   background: #FFFFFF;
+   border: 2px solid #F3C653;
+   }
+   @media screen and (min-width: 1024px) {
+   margin-right: 0;
+   }
+}
+
+
+.menu__wrap {
+   @media screen and (min-width: 1024px) {
+   display: flex;
+   justify-content: space-between;
+   }
+}
+
+.list__wrap {
+   @media screen and (min-width: 1024px) {
+   min-width: 411px;
+   }
+}
+
+
+@media screen and (min-width: 1280px) {
+   
+   }
