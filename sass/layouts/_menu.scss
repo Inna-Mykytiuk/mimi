@@ -1,6 +1,9 @@
 .menu {
    background-color: #FFFDEE;
    padding: 32px 0;
+   @media screen and (min-width: 1024px) {
+   padding: 58px 0 40px 0;
+   }
 }
 
 .menu__title {
@@ -49,6 +52,7 @@
    margin: 0 0 4px 0;
 
    color: #000000;
+   
 }
 
 .menu__text {
@@ -102,6 +106,9 @@
 .name__wrap {
    max-width: 221px;
    margin-right: auto;
+   @media screen and (min-width: 1024px) {
+   max-width: 226px;
+   }
    
 }
 
@@ -164,6 +171,7 @@
 .menu__wrap {
    @media screen and (min-width: 1024px) {
    display: flex;
+   // justify-content: center;
    justify-content: space-between;
    }
 }
@@ -175,17 +183,17 @@
 // }
 
 
-@media screen and (min-width: 1280px) {
-   
-   }
-
-
 @media screen and (min-width: 1024px) {
    .list__wrap.first {
       width: 411px;
+      // margin-right: 88px;
    }
    .list__wrap.second {
       width: 430px;
    }
+}
+
+@media screen and (min-width: 1280px) {
+   
 }
 
