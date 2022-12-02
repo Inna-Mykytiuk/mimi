@@ -98,24 +98,21 @@ body {
 }
 
 .container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 414px;
   margin: 0 auto;
-}
-@media screen and (min-width: 414px) {
-  .container {
-    width: 414px;
-  }
+  padding: 0 15px;
+  outline: 1px solid black;
 }
 @media screen and (min-width: 1024px) {
   .container {
-    width: 1024px;
+    max-width: 1024px;
+    padding: 0 47px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
+    max-width: 1280px;
+    padding: 0 85px;
   }
 }
 
@@ -231,7 +228,7 @@ body {
 }
 
 .menu {
-  background-color: #FFFDEE;
+  background-color: #fffdee;
   padding: 32px 0;
 }
 @media screen and (min-width: 1024px) {
@@ -241,6 +238,7 @@ body {
 }
 
 .menu__title {
+  font-style: "TimesNewRoman";
   font-weight: 700;
   font-size: 32px;
   line-height: 1.15;
@@ -248,6 +246,7 @@ body {
 }
 
 .menu__subtitle {
+  font-style: "TimesNewRoman";
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -259,17 +258,11 @@ body {
     margin: 20px 0;
   }
 }
-
-.menu__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1280px) {
+  .menu__subtitle {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .menu__name {
@@ -280,14 +273,30 @@ body {
   margin: 0 0 4px 0;
   color: #000000;
 }
+@media screen and (min-width: 1280px) {
+  .menu__name {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu__name.long {
+    width: 291px;
+  }
+}
 
 .menu__text {
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
   color: #000000;
+}
+@media screen and (min-width: 1280px) {
+  .menu__text {
+    max-width: 257px;
+  }
 }
 
 .menu__text.last {
@@ -296,12 +305,16 @@ body {
 
 .menu__text.short {
   max-width: 210px;
-  margin: 0;
+  margin-left: 0;
+}
+@media screen and (min-width: 1280px) {
+  .menu__text.short {
+    min-width: 291px;
+  }
 }
 
 .menu__text.long {
   width: 225px;
-  margin: 0 0 8px 0;
 }
 
 .menu__amount {
@@ -326,6 +339,17 @@ body {
     margin: 0 0 0 47px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .menu__price {
+    margin: 0 0 0 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu__price {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
 
 .name__wrap {
   max-width: 221px;
@@ -336,22 +360,54 @@ body {
     max-width: 226px;
   }
 }
-
-.deserts__name {
-  margin: 0 0 8px 0;
-}
-@media screen and (min-width: 1024px) {
-  .deserts__name {
-    margin: 0 0 11px 0;
+@media screen and (min-width: 1280px) {
+  .name__wrap {
+    max-width: 258px;
   }
 }
 
+.deserts__name,
 .drinks__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  margin-left: 0;
+  color: #000000;
+}
+
+.menu__item.deserts {
   margin: 0 0 8px 0;
 }
-@media screen and (min-width: 1024px) {
-  .drinks__name {
-    margin: 0 0 8px 0;
+@media screen and (min-width: 1280px) {
+  .menu__item.deserts {
+    margin-bottom: 12px;
+  }
+}
+
+.menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.deserts__list .menu__item.deserts:last-child {
+  margin-bottom: 0;
+}
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1280px) {
+  .menu__item {
+    margin-bottom: 12px;
   }
 }
 
@@ -376,15 +432,15 @@ body {
   height: 50px;
   background-color: #000000;
   border-radius: 25px;
-  border: 2px solid #FFFDEE;
+  border: 2px solid #fffdee;
   cursor: pointer;
-  color: #F3C653;
+  color: #f3c653;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-menu:hover {
-  background: #FFFFFF;
-  border: 2px solid #F3C653;
+  background: #ffffff;
+  border: 2px solid #f3c653;
 }
 @media screen and (min-width: 1024px) {
   .btn-menu {
@@ -404,13 +460,28 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  .list__wrap.first {
-    width: 411px;
-  }
   .list__wrap.second {
     width: 430px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .list__wrap.second {
+    width: 485px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .list__wrap.first {
+    width: 411px;
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .list__wrap.first {
+    width: 485px;
+    margin-right: 140px;
+  }
+}
+
 .benefits {
   background-color: #FFFDEE;
   padding: 32px 0;
