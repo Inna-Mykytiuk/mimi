@@ -309,7 +309,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .menu__text.short {
-    min-width: 291px;
+    min-width: 270px;
   }
 }
 
@@ -353,7 +353,12 @@ body {
 
 .name__wrap {
   max-width: 221px;
-  margin-right: auto;
+  margin-right: 30px;
+}
+@media screen and (max-width: 413px) {
+  .name__wrap {
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 1024px) {
   .name__wrap {
@@ -363,6 +368,7 @@ body {
 @media screen and (min-width: 1280px) {
   .name__wrap {
     max-width: 258px;
+    margin-right: 45px;
   }
 }
 

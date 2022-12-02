@@ -91,7 +91,7 @@
    margin-left: 0;
 
    @media screen and (min-width: 1280px) {
-      min-width: 291px;
+      min-width: 270px;
    }
 }
 
@@ -140,14 +140,20 @@
 
 .name__wrap {
    max-width: 221px;
-   margin-right: auto;
+   margin-right: 30px;
+   @media screen and (max-width: 413px) {
+      margin-right: auto;
+   }
 
    @media screen and (min-width: 1024px) {
       max-width: 226px;
+      // margin-right: 45px;
+
    }
 
    @media screen and (min-width: 1280px) {
       max-width: 258px;
+      margin-right: 45px;
    }
 }
 
