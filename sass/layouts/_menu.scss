@@ -161,13 +161,24 @@
    }
 }
 
-.list__wrap {
-   @media screen and (min-width: 1024px) {
-   min-width: 411px;
-   }
-}
+// .list__wrap {
+//    @media screen and (min-width: 1024px) {
+//    min-width: 411px;
+//    }
+// }
 
 
 @media screen and (min-width: 1280px) {
    
    }
+
+
+@media screen and (min-width: 1024px) {
+   .list__wrap.first {
+      width: 411px;
+   }
+   .list__wrap.second {
+      width: 430px;
+   }
+}
+
