@@ -2,13 +2,16 @@
    background-color: #fffdee;
    padding: 32px 0;
 
-   @media screen and (min-width: 1024px) {
+   @include tablet {
       padding: 58px 0 40px 0;
+   }
+   @include desktop {
+      padding: 58px 0 60px 0;
    }
 }
 
 .menu__title {
-   font-style: "TimesNewRoman";
+   font-style: 'TimesNewRoman';
    font-weight: 700;
    font-size: 32px;
    line-height: 1.15;
@@ -17,7 +20,7 @@
 }
 
 .menu__subtitle {
-   font-style: "TimesNewRoman";
+   font-style: 'TimesNewRoman';
    font-weight: 700;
    font-size: 20px;
    line-height: 1.15;
@@ -25,19 +28,31 @@
 
    color: #000000;
 
-   @media screen and (min-width: 1024px) {
+   @include tablet {
       margin: 20px 0;
    }
 
-   @media screen and (min-width: 1280px) {
+   @include desktop {
       font-size: 24px;
       line-height: 1.16;
    }
 }
 
+.menu__subtitle.first--sub {
+   margin-top: 0;
+}
 
+.menu__subtitle.first--sub,
+.menu__subtitle.second--sub {
+   @include tablet {
+      margin-top: 0;
 
+   }
 
+   @include desktop {
+      margin-top: 0;
+   }
+}
 
 
 .menu__name {
@@ -49,18 +64,17 @@
 
    color: #000000;
 
-   @media screen and (min-width: 1280px) {
+   @include desktop {
       font-size: 16px;
       line-height: 1.25;
    }
 }
 
 .menu__name.long {
-   @media screen and (min-width: 1280px) {
+   @include desktop {
    width: 291px;
    }
 }
-
 
 
 .menu__text {
@@ -73,13 +87,11 @@
 
    color: #000000;
 
-   @media screen and (min-width: 1280px) {
+   @include desktop {
       max-width: 257px;
    }
 
-   // @media screen and (min-width: 1280px) {
-   // margin-bottom: 12px;
-   // }
+
 }
 
 .menu__text.last {
@@ -90,7 +102,7 @@
    max-width: 210px;
    margin-left: 0;
 
-   @media screen and (min-width: 1280px) {
+   @include desktop {
       min-width: 270px;
    }
 }
@@ -98,10 +110,7 @@
 
 .menu__text.long {
    width: 225px;
-   // margin: 0 0 8px 0;
-   // @media screen and (min-width: 1280px) {
-   // margin: 0 0 12px 0;
-   // }
+
 }
 
 .menu__amount {
@@ -124,18 +133,16 @@
    // margin: 0;
    margin: 0 0 0 32px;
 
-   @media screen and (min-width: 1024px) {
+   @include tablet {
       margin: 0 0 0 47px;
    }
 
-   @media screen and (min-width: 1280px) {
+   @include desktop {
       margin: 0 0 0 60px;
-   }
-
-   @media screen and (min-width: 1280px) {
       font-size: 16px;
       line-height: 1.25;
    }
+
 }
 
 .name__wrap {
@@ -145,13 +152,13 @@
       margin-right: auto;
    }
 
-   @media screen and (min-width: 1024px) {
+   @include tablet {
       max-width: 226px;
       // margin-right: 45px;
 
    }
 
-   @media screen and (min-width: 1280px) {
+   @include desktop {
       max-width: 258px;
       margin-right: 45px;
    }
@@ -170,7 +177,7 @@
 
 .menu__item.deserts {
    margin: 0 0 8px 0;
-   @media screen and (min-width: 1280px) {
+   @include desktop {
       margin-bottom: 12px;
    }
 }
@@ -190,7 +197,7 @@
 
    margin-bottom: 8px;
 
-   @media screen and (min-width: 1280px) {
+   @include desktop {
       margin-bottom: 12px;
    }
 }
@@ -242,17 +249,22 @@
       border: 2px solid #f3c653;
    }
 
-   @media screen and (min-width: 1024px) {
+   @include tablet {
       margin-right: 0;
    }
 }
 
 .menu__wrap {
-   @media screen and (min-width: 1024px) {
+   margin-top: 32px;
+   @include tablet {
       display: flex;
       // justify-content: center;
       justify-content: space-between;
+      margin-top: 40px;
    }
+   // @include desktop {
+   //    margin-top: 40px;
+   // }
 }
 
 // .list__wrap {
@@ -261,7 +273,7 @@
 //    }
 // }
 
-@media screen and (min-width: 1024px) {
+@include tablet {
 
    // .list__wrap.first {
    //    width: 411px;
@@ -272,7 +284,7 @@
    }
 }
 
-@media screen and (min-width: 1280px) {
+@include desktop  {
 
    // .list__wrap.first {
    //    width: 485px;
@@ -284,12 +296,12 @@
 }
 
 .list__wrap.first {
-   @media screen and (min-width: 1024px) {
+   @include tablet {
       width: 411px;
       margin-right: 88px;
    }
 
-   @media screen and (min-width: 1280px) {
+   @include desktop  {
       width: 485px;
       margin-right: 140px;
    }
