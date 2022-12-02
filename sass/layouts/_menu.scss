@@ -107,7 +107,9 @@
 
 .deserts__name{
    margin: 0 0 8px 0;
-   
+   @media screen and (min-width: 1024px) {
+   margin: 0 0 11px 0;
+   }
 }
 
 .deserts__name.last {
