@@ -868,6 +868,7 @@ body {
 .footer__soc:hover, .footer__soc:focus {
   background-color: transparent;
   color: white;
+  border: 0.5px solid white;
 }
 @media screen and (min-width: 1024px) {
   .footer__soc {
@@ -876,6 +877,11 @@ body {
     border-radius: 2px;
     padding: 10px 12px;
   }
+}
+
+.footer__soc:hover .soc__name,
+.footer__soc:focus .soc__name {
+  color: white;
 }
 
 .footer-link {

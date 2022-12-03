@@ -104,7 +104,7 @@
    &:focus {
       background-color: transparent;
       color: white;
-      // border: 0.5px solid white;
+      border: 0.5px solid white;
    }
 
    @include tablet {
@@ -114,6 +114,12 @@
       padding: 10px 12px;
    }
 }
+
+.footer__soc:hover .soc__name,
+.footer__soc:focus .soc__name {
+   color: white;
+}
+
 
 .footer-link {
    font-family: 'Montserrat';
