@@ -83,15 +83,12 @@
    font-size: 10px;
    line-height: 1.2;
    letter-spacing: 0.02em;
-   // margin-bottom: 8px;
 
    color: #000000;
 
    @include desktop {
       max-width: 257px;
    }
-
-
 }
 
 .menu__text.last {
@@ -130,7 +127,6 @@
    letter-spacing: 0.02em;
    color: #000000;
    font-weight: 700;
-   // margin: 0;
    margin: 0 0 0 32px;
 
    @include tablet {
@@ -155,7 +151,6 @@
    @include tablet {
       max-width: 226px;
       // margin-right: 45px;
-
    }
 
    @include desktop {
@@ -202,15 +197,6 @@
    }
 }
 
-
-
-// .deserts__name,
-// .drinks__name {
-//    margin: 0 0 8px 0;
-//    @media screen and (min-width: 1280px) {
-//    margin: 0 0 9px 0;
-//    }
-// }
 
 .deserts__name.last,
 .drinks__name.last {

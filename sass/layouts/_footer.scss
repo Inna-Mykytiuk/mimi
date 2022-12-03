@@ -1,37 +1,126 @@
-.footer {
-   padding-bottom: 90px;
+// .footer {
+//    padding-bottom: 90px;
 
+// }
+
+// .footer-wrap {
+//    display: flex;
+//    justify-content: space-between;
+// }
+
+// .footer__icon {
+//    fill: #4B321D;
+//    margin-top: 85px;
+// }
+
+// .footer-link {
+//    font-weight: 400;
+//    font-size: 17px;
+//    line-height: 1.7;
+//    text-decoration: none;
+
+//    color: #4B321D;
+//    &:hover,
+//    &:focus {
+//       color: var(--acent-color);
+//    }
+// }
+
+// .menu__link:hover,
+// .menu__link:focus{
+//    color: var(--acent-color);
+// }
+
+// .list-wrap {
+//    display: flex;
+//    gap: 178px;
+// }
+
+.footer {
+   background-color: #0E0C07;
+   padding: 40px;
 }
 
-.footer-wrap {
+.footer__inner {
    display: flex;
+   align-items: center;
    justify-content: space-between;
 }
 
-.footer__icon {
-   fill: #4B321D;
-   margin-top: 85px;
+.footer-list {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 32px;
 }
 
-.footer-link {
-   font-weight: 400;
-   font-size: 17px;
-   line-height: 1.7;
-   text-decoration: none;
+.footer__logo {
+font-family: 'Film P3';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+// font-size: 64px;
+line-height: 1.07;
 
-   color: #4B321D;
+letter-spacing: 0.3em;
+
+color: #F3C653;
+// margin-right: 85px;
+}
+
+
+
+.footer__soc {
+   display: flex;
+   // display: block;
+   // align-items: center;
+   // border: 0.5px solid #F3C653;
+
+   color: #F3C653;;
+   // padding: 12px;
+   border-radius: 2px;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
    &:hover,
    &:focus {
-      color: var(--acent-color);
+      background-color: transparent;
+      color: white;
+      // border: 0.5px solid white;
    }
 }
 
-.menu__link:hover,
-.menu__link:focus{
-   color: var(--acent-color);
+.footer-link {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: 0.02em;
+
+   color: #F3C653;
+
 }
 
-.list-wrap {
-   display: flex;
-   gap: 178px;
+.footer__icon {
+   display: block;
+   fill: currentColor;
 }
+
+.soc__name {
+   display: none;
+}
+
+.footer-item {
+   margin-bottom: 16px;
+}
+.footer-item:last-child {
+   margin-bottom: 0;
+
+}
+
+
+.footer-social__wrap {
+   display: flex;
+   gap: 20px;
+}
+
