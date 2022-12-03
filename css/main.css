@@ -819,6 +819,11 @@ body {
   line-height: 1.07;
   letter-spacing: 0.3em;
   color: #F3C653;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__logo:hover, .footer__logo:focus {
+  color: white;
 }
 
 .footer__soc {
@@ -842,7 +847,12 @@ body {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #F3C653;
+}
+.footer-link:hover, .footer-link:focus {
+  color: white;
 }
 
 .footer__icon {
